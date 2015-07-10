@@ -1,0 +1,102 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#ff404040"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:baselineAligned="false">
+
+    <TextView
+        android:layout_width="300dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Portable PCR"
+        android:id="@+id/title"
+        android:background="@color/button_material_dark"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/connection"
+        android:layout_alignStart="@+id/connection"
+        android:singleLine="false" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:id="@+id/recdata"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Receiving: "
+        android:background="#ffffffff"
+        android:layout_below="@+id/editInp"
+        android:layout_alignLeft="@+id/sendmsg"
+        android:layout_alignStart="@+id/editInp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/button_material_dark"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/settemp"
+        android:layout_below="@+id/sendmsg"
+        android:layout_alignLeft="@+id/sendmsg"
+        android:layout_marginTop="20dp"
+        android:text="Set PCR Temps" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Connect to Device"
+        android:id="@+id/connection"
+        android:background="#ffb90600"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Start PCR"
+        android:id="@+id/sendmsg"
+        android:background="#ffb90600"
+        android:layout_marginTop="100dp"
+        android:layout_below="@+id/connection"
+        android:layout_alignLeft="@+id/connection"
+        android:layout_alignStart="@+id/connection" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:id="@+id/editInp"
+        android:layout_below="@+id/settemp"
+        android:layout_alignLeft="@+id/sendmsg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"/>
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:id="@+id/editInp2"
+        android:layout_below="@+id/settemp"
+        android:layout_alignLeft="@+id/sendmsg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="105dp"/>
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:id="@+id/editInp3"
+        android:layout_below="@+id/settemp"
+        android:layout_alignLeft="@+id/sendmsg"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="205dp"/>
+
+</RelativeLayout>
